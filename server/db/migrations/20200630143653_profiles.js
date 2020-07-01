@@ -8,6 +8,7 @@ exports.up = (knex, Promise) => {
       table.string('image')
       table.string('description')
       table.string('dialect')
+      table.string('level')
     })
   }
   

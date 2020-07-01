@@ -12,7 +12,8 @@ exports.seed = function(knex) {
         rate: 50,
         image: 'images\heeni.png',
         description: 'Kia ora, Ko Rangitoto toku ingoa',
-        dialect: 'NgaPuhi'
+        dialect: 'NgaPuhi',
+        level: 'Beginner'
       }
       ]);
     });
