@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Header, Container} from 'semantic-ui-react'
+import { Header, Container, Image} from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import { Image } from 'semantic-ui-react'
+
 
 class Beginner extends Component {
  
@@ -14,6 +14,7 @@ class Beginner extends Component {
                       height: '100%',
                       // background: 'rgb(22,95,102)',
                       background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
+                      overflow: 'hidden'
 }}></Container>
 
 
@@ -24,16 +25,38 @@ class Beginner extends Component {
           margin: '20px 10px 20px 10px',
           border: 'none',
           background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
-          padding: '1300px 10px',
+          padding: '200px 10px',
           fontSize: '50px',
           textAlign: 'center'}}> 
 
 
+<h1 style={{
+  color: 'White',
+  margin: 'auto',
+  fontFamily: 'Montserrat'
+}}>Beginner</h1> 
 
+<Image
+    src='./images/beginner.png'
+    size='tiny'
+    style={{
+      width:'10em', height:'10em'
+    }}
+  />
 
+<h5 style={{
+      fontsize: '5px',
+      color: 'white',
+      fontFamily: 'Montserrat'
+    }}>
+  This level is for those who are new to the Māori language or would like to start at the basic fundamentals of Te Reo Māori. With your tutor you will learn the alphabet, numbers, days of the week, objects and basic phrases.</h5>
+    
+  
+    
     <div style={{
       margin: '155px', 
-      }}> 
+    }}> 
+    
 
         <button style={{   
           borderRadius: '35px', 
@@ -41,11 +64,11 @@ class Beginner extends Component {
           width: '50%',
           margin: 'auto',
           float: "left",
-          backgroundColor: '#FF6347',
+          backgroundColor: '#F0FFFF',
           padding: '50px 10px 50px 10px',
-          fontSize: '50px',
+          fontSize: '40px',
           textAlign: 'center'}}>
-          <Link to='/Level' style={{color: 'black'}}> Back</Link>
+          <Link to='/Level' style={{color: 'teal'}}> Back</Link>
           </button>
           </div>
 
@@ -60,10 +83,11 @@ class Beginner extends Component {
           width: '50%',
           float: "right",
           margin: 'auto',
-          backgroundColor: '#FF6347',
+          backgroundColor: '#F0FFFF',
           padding: '50px 10px 50px 10px',
-          fontSize: '50px',
-          textAlign: 'center'}}>Next
+          fontSize: '40px',
+          textAlign: 'center'}}>
+          <Link to='/Recommendations' style={{color: 'teal'}}> Next</Link>
           </button>      
     </div>
 

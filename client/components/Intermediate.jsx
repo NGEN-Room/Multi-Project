@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Header, Container} from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-
+import { Image } from 'semantic-ui-react'
 
 class Intermediate extends Component {
  
@@ -9,37 +9,64 @@ class Intermediate extends Component {
     
       return (
         <React.Fragment>   
+          
+          <Container style={{margin: '0',
+                      height: '100%',
+                      // background: 'rgb(22,95,102)',
+                      background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
+}}></Container>
+
+
   <Container style={{   
           borderRadius: '35px', 
           display: 'block',
           width: '95%',
           margin: '20px 10px 20px 10px',
           border: 'none',
-          backgroundColor: '#B9B9B9	',
-          padding: '1300px 10px',
+          background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
+          padding: '200px 10px',
           fontSize: '50px',
-          font: 'futura',
           textAlign: 'center'}}> 
+         
+          <h1 style={{
+            color: 'White',
+            margin: 'auto',
+            fontFamily: 'Montserrat'
+            }}>Intermediate</h1> 
 
+          
+<Image
+    src='./images/Intermediate.png'
+    size='tiny'
+    style={{
+      width:'10em', height:'10em'
+    }}
+  />
 
+<h5 style={{
+      fontsize: '5px',
+      color: 'white',
+      fontFamily: 'Montserrat'
+    }}>
+ This level is for those who have the basic foundations of Te Reo Māori and would like to expand on sentence structures and more. With your tutor you will learn how to Mihi (cultural greeting), expand vocabulary and whakapapa (genealogy)
+</h5>
 
 
     <div style={{
       margin: '155px', 
       }}> 
 
-        <button style={{   
+<button style={{   
           borderRadius: '35px', 
           display: 'block',
           width: '50%',
           margin: 'auto',
           float: "left",
-          backgroundColor: '#FF6347',
+          backgroundColor: '#F0FFFF',
           padding: '50px 10px 50px 10px',
-          fontSize: '50px',
-          font: 'futura',
+          fontSize: '40px',
           textAlign: 'center'}}>
-          <Link to='/Level' style={{color: 'black'}}> Back</Link>
+          <Link to='/Level' style={{color: 'teal'}}> Back</Link>
           </button>
           </div>
 
@@ -54,10 +81,11 @@ class Intermediate extends Component {
           width: '50%',
           float: "right",
           margin: 'auto',
-          backgroundColor: '#FF6347',
+          backgroundColor: '#F0FFFF',
           padding: '50px 10px 50px 10px',
-          fontSize: '50px',
-          textAlign: 'center'}}>Next
+          fontSize: '40px',
+          textAlign: 'center'}}>
+          <Link to='/Recommendations' style={{color: 'teal'}}> Next</Link>
           </button>      
     </div>
 
