@@ -25,7 +25,7 @@ class Advanced extends Component {
             width: '95%',
             margin: '20px 10px 20px 10px',
             border: 'none',
-            backgroundColor: '#B9B9B9	',
+            background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
             padding: '1300px 10px',
             fontSize: '50px',
             textAlign: 'center'}}> 
