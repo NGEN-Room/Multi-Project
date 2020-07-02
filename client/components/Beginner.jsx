@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Header, Container} from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import { Image } from 'semantic-ui-react'
 
 class Beginner extends Component {
  
@@ -7,20 +9,32 @@ class Beginner extends Component {
     
       return (
         <React.Fragment>   
+          
+          <Container style={{margin: '0',
+                      height: '100%',
+                      // background: 'rgb(22,95,102)',
+                      background: 'linear-gradient(110deg, rgba(22,95,102,1) 0%, rgba(142,209,189,1) 100%)',
+}}></Container>
+
+
   <Container style={{   
           borderRadius: '35px', 
           display: 'block',
           width: '95%',
-          margin: 'auto',
+          margin: '20px 10px 20px 10px',
           border: 'none',
           backgroundColor: '#B9B9B9	',
-          padding: '800px 10px',
+          padding: '1300px 10px',
           fontSize: '50px',
           textAlign: 'center'}}> 
 
 
 
-    <div style={{margin: '155px'}}> 
+
+    <div style={{
+      margin: '155px', 
+      }}> 
+
         <button style={{   
           borderRadius: '35px', 
           display: 'block',
@@ -30,27 +44,29 @@ class Beginner extends Component {
           backgroundColor: '#FF6347',
           padding: '50px 10px 50px 10px',
           fontSize: '50px',
-          textAlign: 'center'}}>Intermediate
+          textAlign: 'center'}}>
+          <Link to='/Level' style={{color: 'black'}}> Back</Link>
           </button>
           </div>
 
-    <div style={{margin: '155px'}}> 
+          <div style={{
+      margin: '155px', 
+      }}> 
+
+
         <button style={{   
           borderRadius: '35px', 
           display: 'block',
           width: '50%',
           float: "right",
           margin: 'auto',
-          border: 'none',
           backgroundColor: '#FF6347',
           padding: '50px 10px 50px 10px',
           fontSize: '50px',
-          cursor: 'pointer',
-          height: '-50px',
-          textAlign: 'center'}}>Intermediate
+          textAlign: 'center'}}>Next
           </button>      
+    </div>
 
-</div>
 
 
   </Container>
